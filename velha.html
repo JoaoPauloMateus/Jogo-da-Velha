@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+	<title>Jogo da Velha  by: JPMateus</title>
+	<meta charset="utf8">
+    <script language="text/javascript" scr="velha.js"></script>
+    <link rel="stylesheet" type="text/css" href="velha.css">
+
+</head>
+<body>
+
+    <div id="vez" class="vez">    
+        <p>
+            Com qual deseja jogar? X ou O <input type="text" name="txtescolher" id="txtescolher" maxlength="1" size="1"> <input type="button" value="Ok" onclick="escolher_letra()">
+            <!--<form name="opcoes"></form>
+            <input type="radio" name="radio_escolha" id="radio_escolha" checked>X<br>
+            <input type="radio" name="radio_escolha" id="radio_escolha">O-->
+        </p>
+                
+
+    </div>
+    
+    
+    <div class="velha" id="velha">
+        <div class="linha1">
+            <div id="c11" onclick="jogada(this.id);verificacao()"></div>
+            <div id="c12" onclick="jogada(this.id);verificacao()"></div>
+            <div id="c13" onclick="jogada(this.id);verificacao()"></div>
+        </div>
+        <div class="linha2">
+            <div id="c21" onclick="jogada(this.id);verificacao()"></div>
+            <div id="c22" onclick="jogada(this.id);verificacao()"></div>
+            <div id="c23" onclick="jogada(this.id);verificacao()"></div>
+        </div>
+        <div class="linha3">
+            <div id="c31" onclick="jogada(this.id);verificacao()"></div>
+            <div id="c32" onclick="jogada(this.id);verificacao()"></div>
+            <div id="c33" onclick="jogada(this.id);verificacao()"></div>
+        </div>
+        
+    </div>  
+
+    <div id="novo">
+        <input type="button" value="Inicie um novo jogo" onclick="novo()">
+    </div>
+    <div id="cont"></div>
+
+
+
+    <script src="velha.js" async></script>
+
+</body>
+</html>
